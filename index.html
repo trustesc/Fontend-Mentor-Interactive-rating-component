@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <!-- Styles were moved to styles.css -->
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- font Family: [Overpass] -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">trustesc</a>.
+    </div>
+
+    <!-- My Code below -->
+
+    <br>
+
+    <main>
+
+      <div id="page-1">
+
+        <div class="center-items-page-1">
+
+          <img class="icon-star" src="./images/icon-star.svg" alt="icon-star.svg is missing!" />
+
+          <h1 class="feedback1">How did we do?</h1>
+
+          <p class="feedback2">
+
+            Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!
+
+          </p>
+
+          <div class="buttons">
+
+            <button class="btn" id="perf-button1" value="1" onclick="selectedPerf(this);">1</button>
+            <button class="btn" id="perf-button2" value="2" onclick="selectedPerf(this)">2</button>
+            <button class="btn" id="perf-button3" value="3" onclick="selectedPerf(this)">3</button>
+            <button class="btn" id="perf-button4" value="4" onclick="selectedPerf(this)">4</button>
+            <button class="btn" id="perf-button5" value="5" onclick="selectedPerf(this)">5</button>
+
+          </div>
+
+          <button type="submit" class="submitbutton" onclick="updatePage()">SUBMIT</button>
+
+        </div>
+
+      </div>
+
+      <div id="page-2">
+
+        <div class="center-all-elements">
+
+          <img class="illustration-thank-you" src="./images/illustration-thank-you.svg"
+            alt="illustration-thank-you.svg is missing!" />
+
+          <p class="selection">You selected <span id='selectedbutton'></span> out of 5</p>
+
+          <h1 class="thankyou1">Thank you!</h1>
+
+          <p class="thankyou2">We appreciate you taking the time to give a rating. If you ever need more support,
+            don't hesitate to get in touch!</p>
+
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Link to the js file -->
+
+  <script src="./interactive-rating-component.js"></script>
+
+</body>
+
+</html>

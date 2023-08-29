@@ -1,0 +1,272 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    /* Added for for visibility purposes */
+
+    color: var(--White);
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+
+    /* Added for for visibility purposes */
+
+    font-weight: 700;
+}
+
+/* My Code below */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* colors used multiple times */
+
+    --DarkBlue: hsl(213, 19%, 18%);
+    --LightBlue: #26303A;
+    --MediumBlue: #1F2630;
+    --MediumGrey: hsl(216, 12%, 54%);
+    --Orange: hsl(25, 97%, 53%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#page-1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 414px;
+    max-height: 418px;
+    margin: auto;
+    border-radius: 5%;
+    background-color: var(--MediumBlue);
+
+}
+
+.center-items-page-1 {
+    margin: 0px 40px 32px 40px;
+
+}
+
+.icon-star {
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+    padding: 4%;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: var(--LightBlue);
+    background-color: var(--LightBlue);
+
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    color: aqua;
+
+}
+
+.feedback1 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--White);
+
+}
+
+.feedback2 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--MediumGrey);
+
+}
+
+.buttons {
+    display: flex;
+    max-width: 412px;
+    justify-content: space-between;
+
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: #89939E;
+    background-color: var(--LightBlue);
+    border-color: var(--LightBlue);
+
+}
+
+.btn:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+
+}
+
+.btn:focus {
+    background-color: #7C8898;
+    color: var(--White);
+
+}
+
+.submitbutton {
+    width: 340px;
+    height: 45px;
+    margin-top: 32px;
+    border-style: solid;
+    border-radius: 5rem;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Orange);
+    border-color: var(--Orange);
+    cursor: pointer;
+
+}
+
+.submitbutton:hover {
+    background-color: var(--White);
+    border-color: var(--White);
+    color: var(--Orange);
+
+}
+
+#page-2 {
+    max-width: 414px;
+    max-height: 418px;
+    margin: auto;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: var(--MediumBlue);
+    background-color: var(--MediumBlue);
+    display: none;
+
+}
+
+.center-all-elements {
+    margin: 45px 40px 32px 40px;
+    text-align: center;
+}
+
+.selection {
+    margin: 32px auto 0px auto;
+    max-width: 193px;
+    border-style: solid;
+    border-radius: 5rem;
+    border-color: var(--LightBlue);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: var(--Orange);
+    background-color: var(--LightBlue);
+
+}
+
+.thankyou1 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--White);
+
+}
+
+.thankyou2 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--MediumGrey);
+
+
+}
+
+@media only screen and (max-width: 430px) {
+
+    .container {
+        height: 667px;
+
+    }
+
+    h1 {
+        font-size: larger;
+
+    }
+
+    #page-1 {
+        max-width: 328px;
+        max-height: 360px;
+
+    }
+
+    .center-items-page-1 {
+        margin: 0px 24px 32px 24px;
+
+    }
+
+    .icon-star {
+        width: 40px;
+        height: 40px;
+        padding: 4%;
+        margin-top: 23px;
+
+    }
+
+    .buttons {
+        max-width: 281px;
+
+    }
+
+    .btn {
+        width: 43px;
+        height: 43px;
+
+    }
+
+    .submitbutton {
+        width: 280px;
+        height: 45px;
+        margin-top: 24px;
+
+    }
+
+    #page-2 {
+        max-width: 328px;
+        max-height: 360px;
+
+    }
+
+    .center-all-elements {
+        margin: 34px 28px 32px 28px;
+    }
+
+    .selection {
+        margin: 32px auto 0px auto;
+        max-width: 168px;
+        font-size: 15px;
+
+    }
+
+}
+
+@media only screen and (max-width: 1441px) {
+
+    .container {
+        height: 800px;
+
+    }
+
+}
